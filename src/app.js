@@ -8,6 +8,10 @@ app.get("/", (request, response) => {
     response.send("Estamos funcionando!")
 })
 
+app.use(express.json())
+
+app.post("/users", userController.createUser)
+
 app.get("/users", userController.getAllUsers)
 
 module.exports = app
