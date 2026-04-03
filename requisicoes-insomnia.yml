@@ -10,7 +10,7 @@ collection:
   - url: localhost:3000
     name: testa api
     meta:
-      id: req_f0bb154fc85d403b8b1f4ab36da0e5e7
+      id: req_86d3a7a92da44c3d94b9b25de1becf4e
       created: 1773959361959
       modified: 1773959738922
       isPrivate: false
@@ -33,7 +33,7 @@ collection:
   - url: localhost:3000/users
     name: lista usuários
     meta:
-      id: req_f93ce19107a84a9db575a9ab1212c8f4
+      id: req_bb82bbd6336741d5a86a1b1ca2e5575b
       created: 1773960291080
       modified: 1773960340020
       isPrivate: false
@@ -56,7 +56,7 @@ collection:
   - url: localhost:3000/users
     name: cadastra usuário
     meta:
-      id: req_0dcd33f6f0954d9aa6cd02fd6f6472ef
+      id: req_81aa3f3bb35a49e8a75ed26198dde2fe
       created: 1773960387235
       modified: 1774564599194
       isPrivate: false
@@ -85,12 +85,12 @@ collection:
         send: true
         store: true
       rebuildPath: true
-  - url: localhost:3000/users/12
+  - url: localhost:3000/users/1775172407387
     name: busca usuário por id
     meta:
-      id: req_26f5a02e1a584aaaacc5ce85a0206cea
+      id: req_6e7afbe0d27246cc8525d77957c013f7
       created: 1774570479018
-      modified: 1774573006312
+      modified: 1775172471921
       isPrivate: false
       description: ""
       sortKey: -1774570479018
@@ -108,16 +108,71 @@ collection:
         send: true
         store: true
       rebuildPath: true
+  - url: localhost:3000/users/1
+    name: atualiza usuário
+    meta:
+      id: req_2679f3cc7c6c4668b8cd749f3df05c25
+      created: 1775172295867
+      modified: 1775176683287
+      isPrivate: false
+      description: ""
+      sortKey: -1774265433126.5
+    method: PUT
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"name" : "Joao H",
+        	"age": 29
+        }
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
+  - url: localhost:3000/users/1
+    name: remove usuário
+    meta:
+      id: req_787e8a34839e434eb789360700187fd1
+      created: 1775177639810
+      modified: 1775177655861
+      isPrivate: false
+      description: ""
+      sortKey: -1774417956072.25
+    method: DELETE
+    headers:
+      - name: User-Agent
+        value: insomnia/12.1.0
+        description: ""
+        disabled: false
+    settings:
+      renderRequestBody: true
+      encodeUrl: true
+      followRedirects: global
+      cookies:
+        send: true
+        store: true
+      rebuildPath: true
 cookieJar:
   name: Default Jar
   meta:
     id: jar_99d30891da4bdcebc63947a8fc17f076de878684
-    created: 1774563454273
-    modified: 1774563454273
+    created: 1775168110379
+    modified: 1775168110379
 environments:
   name: Base Environment
   meta:
     id: env_99d30891da4bdcebc63947a8fc17f076de878684
-    created: 1774563454269
-    modified: 1774563454269
+    created: 1775168110377
+    modified: 1775168110377
     isPrivate: false
